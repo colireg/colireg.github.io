@@ -1,0 +1,27 @@
+html {
+  font-size: large;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 40em;
+  margin: auto;
+  padding: 1em;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-new(root) {
+  animation: fade 0.3s ease both;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
